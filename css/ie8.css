@@ -1,0 +1,73 @@
+/**
+ *
+ * -------------------------------------------
+ * IE code fixes
+ * -------------------------------------------
+ *
+ **/
+
+/*
+ *
+ * 12. IE
+ *
+ *
+------------------------------------ */
+
+/* 12.1. IE8
+==================================== */
+
+.box:after,
+.box > div:after,
+.gk-page:after,
+#respond:after,
+#gk-footer:after,
+.widget-area:after,
+#gk-mainbody:after,
+#gk-mainbody-columns:after,
+section.content:after {
+    clear: both;
+    content: "";
+    display: table;
+}
+.gk-nsp-arts:after,
+.gk-nsp-links:after {
+	clear: both;
+	content: "";
+	display: table;
+}
+.gk-tabs-wrap > ol li.active:after {
+	background: #fff;
+	content: "";
+	clear: both;
+	display: block;
+	float: left;
+	height: 2px;
+	margin-left: -14px;
+	position: absolute;
+	top: 38px;
+	width: 100%;
+	z-index: 2;
+}
+.author-avatar img {
+	max-width: none!important;
+	width: auto!important;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="email"],
+input[type="www"],
+input[type="tel"] {
+	line-height: 1.2!important;
+}
+
+/* Fix for the IE8 floated image problem */
+.gk-nsp-image {
+    width: auto!important;
+}
+
+/* image logo fix */
+.imageLogo img {
+	max-width: auto!important;
+	width: auto!important;
+}

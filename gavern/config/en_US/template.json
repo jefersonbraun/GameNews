@@ -1,0 +1,18 @@
+{
+	"template": {
+		"name": "GameNews",
+		"update_name": "gk_gamenews_wp",
+		"date": "29/08/2013",
+		"version": "1.5.1",
+		"description": "Game Portal WordPress theme"
+	},
+	"developer_config": {
+		"visibility": {
+			"template_options": true,
+			"importexport": true,
+			"updates": true,
+			"documentation": true,
+			"gavickpro_website": true
+		}
+	}
+}

@@ -1,0 +1,104 @@
+[
+	{
+		"name": "Banner",
+		"css_class": "banner",
+		"for_only": "text"
+	},
+	{
+		"name": "Color 1",
+		"css_class": "color1"
+	},
+	{
+		"name": "Color 2",
+		"css_class": "color2"
+	},
+	{
+		"name": "Color 3",
+		"css_class": "color3"
+	},
+	{
+		"name": "Color 4",
+		"css_class": "color4"
+	},
+	{
+		"name": "Color 5",
+		"css_class": "color5"
+	},
+	{
+		"name": "Color 6",
+		"css_class": "color6"
+	},
+	{
+		"name": "Color 7",
+		"css_class": "color7"
+	},
+	{
+		"name": "Light",
+		"css_class": "light",
+		"exclude": "widget_gk_comments,tag_cloud"
+	},
+	{
+		"name": "Dark",
+		"css_class": "dark",
+		"exclude": "widget_gk_comments,tag_cloud"
+	},
+	{
+		"name": "Advertisement",
+		"css_class": "advertisement",
+		"exclude": "widget_gk_comments,tag_cloud,widget_gk_nsp"
+	},
+	{
+		"name": "No title",
+		"css_class": "notitle"
+	},
+	{
+		"name": "Unified style",
+		"css_class": "tags",
+		"for_only": "tag_cloud"
+	},
+	{
+		"name": "Color 1 BIG",
+		"css_class": "color1 big",
+		"for_only": "widget_gk_nsp"
+	},
+	{
+		"name": "Color 2 BIG",
+		"css_class": "color2 big",
+		"for_only": "widget_gk_nsp"
+	},
+	{
+		"name": "Color 3 BIG",
+		"css_class": "color3 big",
+		"for_only": "widget_gk_nsp"
+	},
+	{
+		"name": "Color 4 BIG",
+		"css_class": "color4 big",
+		"for_only": "widget_gk_nsp"
+	},
+	{
+		"name": "Color 5 BIG",
+		"css_class": "color5 big",
+		"for_only": "widget_gk_nsp"
+	},
+	{
+		"name": "Color 6 BIG",
+		"css_class": "color6 big",
+		"for_only": "widget_gk_nsp"
+	},
+	{
+		"name": "Color 7 BIG",
+		"css_class": "color7 big",
+		"for_only": "widget_gk_nsp"
+	},
+	{
+		"name": "Light BIG",
+		"css_class": "light big",
+		"for_only": "widget_gk_nsp"
+	},
+	{
+		"name": "Dark BIG",
+		"css_class": "dark big",
+		"for_only": "widget_gk_nsp"
+	}
+]

@@ -1,0 +1,444 @@
+/**
+ *
+ * -------------------------------------------
+ * WP Extensions CSS file
+ * -------------------------------------------
+ * 
+ **/
+ 
+/*
+ *
+ * 8. Additional WP extensions styles
+ *
+ *
+------------------------------------ */
+
+/* 8.1. Archives widget
+==================================== */
+
+/* 8.2. Custom menu widget
+==================================== */
+
+.widget_nav_menu ul ul {
+	margin-left: 20px;
+}
+
+/* 8.3. Pages widget
+==================================== */
+
+/* 8.4. RSS widget
+==================================== */
+
+.box h3.box-title .rsswidget {
+	clear: none;
+	float: left;
+	font-size: 20px;
+	margin-right: 10px;
+}
+
+.box h3.box-title a {
+	color: #fff;
+}
+
+.box .rsswidget {
+	clear: both;
+	display: block;
+	font-size: 12px;
+}
+
+.box .rss-date {
+	clear: both;
+	display: block;
+	font-size: 9px;
+	font-style: italic;
+	margin-top: -10px;
+	text-align: right;
+}
+
+.box .rssSummary {
+	clear: both;
+	color: #888;
+	font-size: 10px;
+	line-height: 1.5;
+	margin-bottom: 10px;
+}
+
+/* 8.5. Text widget
+==================================== */
+
+#gk-header .box.widget_text {
+	padding: 0!important;
+}
+
+#gk-header .box.widget_text img {
+	height: auto;
+	max-width: 100%;
+}
+
+/* 8.6. Calendar widget
+==================================== */
+
+.box #wp-calendar {
+	background: #fbfbfb;
+	width: 100%;
+}
+
+.box #wp-calendar caption {
+	background: #fff;
+	border: 1px solid #eee;
+	font-size: 13px;
+	font-weight: normal;
+	padding: 5px 0;
+}
+
+.box #wp-calendar th {
+	background: #f5f5f5;
+	color: #333;
+	font-size: 11px;
+	font-weight: 600;
+	padding: 3px;
+}
+
+.box #wp-calendar td {
+	background: #fff;
+	border: 1px solid #eee;
+	font-size: 11px;
+	padding: 5px 0;
+	text-align: center;
+}
+
+.box #wp-calendar td a {
+	color: #418cd1;
+	display: block;
+	font-size: 12px;
+	font-weight: bold;
+	line-height: 22px;
+	margin: -5px 0;
+	padding: 5px 0;
+}
+
+.box #wp-calendar td a:hover {
+	background: #333;
+	color: #fff;
+}
+
+.box #wp-calendar #today {
+	background: #d24747;
+	color: #fff!important;
+	font-size: 14px;
+	line-height: 22px;
+}
+
+.box #wp-calendar #today a {
+	color: #fff!important;
+}
+
+.box #wp-calendar #prev a,
+.box #wp-calendar #next a {
+	color: #d24747;
+	font-size: 12px;
+	font-weight: normal;
+}
+
+.box #wp-calendar #prev a:hover,
+.box #wp-calendar #next a:hover {
+	background: #fff;
+	color: #333;
+}
+
+.box #wp-calendar thead {
+	border: 1px solid #e5e5e5;
+	border-top: none;
+	border-bottom: none;
+}
+
+.box.widget_calendar {
+	overflow: visible!important;
+}
+
+/* 8.7. Links widget
+==================================== */
+
+.box ul.xoxo a {
+	display: inline-block;
+	line-height: 28px;
+}
+
+.box ul.xoxo a img {
+	vertical-align: middle;
+}
+
+.box ul.xoxo li {
+	padding: 0;
+}
+
+/* 8.8. Recent comments widget
+==================================== */
+
+/* 8.9. Search widget
+==================================== */
+ 
+.box #searchform label,
+.box #searchform #searchsubmit {
+	display: none;
+}
+
+.box #searchform .field {
+	width: 100%;
+}
+ 
+/* 8.10. Categories widget
+==================================== */
+
+.widget_categories li {
+	color: #fff;
+	font-size: 12px;
+	padding: 10px 0!important;
+	-webkit-transition: padding-left .3s ease-out;
+	   -moz-transition: padding-left .3s ease-out;
+	     -o-transition: padding-left .3s ease-out;
+	        transition: padding-left .3s ease-out;
+}
+
+.widget_categories li:hover {
+	padding-left: 10px!important;
+}
+
+.widget_categories a {
+	font-weight: bold;
+}
+
+/* 8.11. Meta widget
+==================================== */
+
+/* 8.12. Recent posts widget
+==================================== */
+
+/* 8.13. Tag cloud widget
+==================================== */
+
+.box .tagcloud {
+	overflow: hidden;
+}
+
+.box .tagcloud a {
+	background: transparent url('../images/header_bg.png') repeat;
+	color: #555;
+	display: block;
+	float: left;
+	line-height: 1.0;
+	margin: 5px 8px 5px 0;
+	padding: 5px 8px 5px 20px;
+	-webkit-transition: background 0.3s ease-out;
+	   -moz-transition: background 0.3s ease-out;
+	     -o-transition: background 0.3s ease-out;
+	        transition: background 0.3s ease-out;
+}
+
+.box .tagcloud a:active,
+.box .tagcloud a:focus,
+.box .tagcloud a:hover {
+	background: #418cd1;
+	color: #fff;
+}
+
+/* unified style */
+.box.tags .tagcloud a {
+	font-size: 12px!important;
+	margin: 2px 8px 2px 0;
+	padding: 5px 8px;
+}
+
+/* 8.14. Common widget styles
+==================================== */
+
+/* suffix banner */
+.box.banner p,
+.box.banner img {
+	display: block;
+	margin: 0;
+	padding: 0;
+	text-align: center;
+}
+
+/* Suffix color1 */
+.box.color1 .box-title > span {
+	background: #d24747;
+}
+
+/* Suffix color2 */
+.box.color2 .box-title > span {
+	background: #e5c235;
+}
+
+/* Suffix color3 */
+.box.color3 .box-title > span {
+	background: #2f3336;
+}
+
+/* Suffixes color4-color7 */
+.box.color4 .box-title,
+.box.color5 .box-title,
+.box.color6 .box-title,
+.box.color7 .box-title {
+	background: #fbfbfb;
+	border: 1px solid #e5e5e5;
+	-webkit-border-radius: 2px;
+	   -moz-border-radius: 2px;
+	        border-radius: 2px;
+	height: auto;
+	margin-bottom: 30px;
+	min-height: 36px;
+}
+
+.box.color4 .box-title > span,
+.box.color5 .box-title > span,
+.box.color6 .box-title > span,
+.box.color7 .box-title > span {
+	background: transparent;
+	color: #d24747;
+	font-size: 16px;
+	font-weight: 700;
+	line-height: 36px;
+	min-height: 36px;
+	text-transform: uppercase;
+}
+
+/* Suffix color5 */
+.box.color5 .box-title > span {
+	color: #418cd1;
+}
+
+/* Suffix color6 */
+.box.color6 .box-title > span {
+	color: #e5c235;
+}
+
+/* Suffix color7 */
+.box.color7 .box-title > span {
+	color: #2f3336;
+}
+
+/* Suffix advertisement */
+.box.advertisement .box-title {
+	background: transparent;
+	border-bottom: 1px solid #e5e5e5;
+	color: #a5a5a5!important;
+	font-size: 9px!important;
+	font-weight: 300;
+	margin: 0 0 10px 0;
+	min-height: 16px;
+	text-align: right;
+	text-transform: uppercase;
+	line-height: 16px;
+	font-family: Arial, Verdana, sans-serif!important;
+}
+
+.box.advertisement .box-title > span {
+	background: transparent;
+	float: right;
+	line-height: 16px;
+	padding: 0;
+}
+
+/* Suffix dark */
+.box.dark > div {
+	background: #2f3336!important;
+	color: #8d8d8d;
+	padding: 20px;
+}
+
+.box.dark .box-title {
+	background: transparent!important;
+}
+
+.box.dark h1,
+.box.dark h2,
+.box.dark h3,
+.box.dark h4,
+.box.dark h5,
+.box.dark h6 {
+	color: #fff;
+}
+
+.box.dark ul {
+	margin: 0;
+	padding: 0;
+}
+.box.dark ul li {
+	border-top: 1px solid #444;
+	position: relative;
+	padding: 4px 0;
+}
+.box.dark ul li:first-child {
+	border-top: none;
+}
+.box.dark a {
+	color: #fff;
+}
+.box.dark a:active,
+.box.dark a:focus,
+.box.dark a:hover {
+	color: #ccc;
+}
+.box.dark ul ul {
+	margin: 0 0 0 20px;
+}
+.box.dark b,
+.box.dark strong {
+	color: #aaa;
+	font-weight: bold;
+}
+
+/* Suffix light */
+.box.light > div {
+	background: #f8f8f8!important;
+	color: #555;
+	padding: 20px;
+}
+
+.box.light .box-title,
+.box.light .box-title span {
+	background: transparent!important;
+	color: #2f3133;
+	padding: 0;
+}
+
+.box.light ul {
+	margin: 0;
+	padding: 0;
+}
+.box.light ul li {
+	border-top: 1px solid #e5e5e5;
+	position: relative;
+}
+.box.light ul li:first-child {
+	border-top: none;
+}
+.box.light ul ul {
+	margin: 0 0 0 20px;
+}
+.box.light b,
+.box.light strong {
+	color: #666;
+	font-weight: bold;
+}
+
+#gk-bottom .box a {
+	color: #777;
+}
+
+#gk-bottom .box a:active,
+#gk-bottom .box a:focus,
+#gk-bottom .box a:hover {
+	color: #333;
+}
+#gk-bottom .box ul li {
+	line-height: 2;
+	padding: 0;
+}
+
+/* Suffix notitle */
+.box.notitle .box-title {
+	display: none;
+}

@@ -1,0 +1,618 @@
+/**
+ *
+ * -------------------------------------------
+ * Template CSS file
+ * -------------------------------------------
+ * 
+ **/
+ 
+/*
+ *
+ * 5. Wordpress elements styling
+ *
+ *
+------------------------------------ */
+ 
+/* 5.1. Main menu
+==================================== */ 
+ 
+#main-menu {
+	background: #2f3335;
+	clear: both;
+	height: 46px;
+	margin: 0;
+	padding: 0;
+}
+#main-menu > li {
+	border-right: 1px solid #484b4d;
+	float: left;
+	height: 46px;
+	font-size: 15px;
+	font-weight: 700;
+	margin: 0;
+	text-transform: uppercase;
+}
+#main-menu > li > a {
+	color: #fff;
+	display: block;
+	height: 46px;
+	line-height: 47px;
+	margin: 0;
+	padding: 0 18px;
+	-webkit-transition: background .3s ease-out;
+	   -moz-transition: background .3s ease-out;
+	     -o-transition: background .3s ease-out;
+	        transition: background .3s ease-out;
+}
+#main-menu > li:hover > a,
+#main-menu > li:active > a,
+#main-menu > li:focus > a,
+#main-menu > li.active:hover > a,
+#main-menu > li.active:active > a,
+#main-menu > li.active:focus > a,
+#main-menu > li.active > a {
+	background: #418cd1;
+}
+#main-menu > li.current-menu-item,
+#main-menu > li.current_page_item,
+#main-menu > li:hover {
+	background: #418cd1;
+}
+#main-menu > li.active > a,
+#main-menu > li.current-menu-item > a,
+#main-menu > li.current_page_item > a,
+#main-menu > li.current-menu-ancestor > a, 
+#main-menu > li.current-menu-parent > a  {
+	background: #418cd1;
+}
+
+/* Submenu */
+#main-menu .sub-menu {
+	background: #418cd1;
+	left: -9999px;
+	overflow: hidden;
+	position: absolute;
+	text-align: left;
+	text-transform: none;
+	width: 200px;
+	z-index: 999;
+}
+
+#main-menu .sub-menu ul {
+	margin: 0;
+}
+
+#main-menu li:hover .sub-menu {
+	left: auto;
+}
+
+#main-menu .sub-menu li {
+	border-top: 1px solid #529de2;
+	line-height: 24px;
+	margin: 0 16px;
+}
+
+#main-menu .sub-menu li:first-child {
+	border-top: none;
+}
+
+#main-menu .sub-menu li a {
+	font-size: 12px;
+	font-family: arial;
+	color: #fff;
+	display: block;
+	min-height: 24px;
+	font-weight: normal;
+	padding: 8px 0;
+}
+
+
+#main-menu .sub-menu li:hover {
+	color: #c8ddf1;
+}
+
+#main-menu .sub-menu li:hover > a,
+#main-menu .sub-menu li > a:active,
+#main-menu .sub-menu li > a:focus,
+#main-menu .sub-menu li > a:hover {
+	color: #c8ddf1;
+	text-decoration: none;
+}
+
+#main-menu .sub-menu .sub-menu {
+	border: 1px solid #529de2;
+	left: -9999px!important;
+	margin-left: 160px;
+	margin-top: -32px!important;
+}
+
+#main-menu .sub-menu li:hover .sub-menu {
+	left: auto!important;
+}
+ 
+/* 5.2. Comments
+==================================== */
+
+#comments {
+	margin: 20px 0 0 0;
+}
+
+#comments.nocomments {
+	border-top: none;
+}
+
+#respond > h3,
+#comments > h2:first-child {
+	background: #418CD1;
+	color: white;
+	float: left;
+	font-size: 18px;
+	font-weight: normal;
+	line-height: 36px;
+	margin: 0 0 28px 0;
+	padding: 0 12px;
+	text-transform: uppercase;
+}
+
+#comments > nav {
+	margin: 12px 0;
+	overflow: hidden;
+}
+
+#comments > nav .nav-prev {
+	float: left;
+}
+
+#comments > nav .nav-next {
+	float: right;
+}
+
+#comments > ol {
+	list-style-type: none;
+	padding: 0;
+}
+
+#comments ol.children {
+	list-style-type: none;
+	margin-left: 5%;
+	padding: 0;
+}
+
+#comments li article {
+	clear: both;	
+	margin-top: 28px;
+	position: relative;
+}
+
+#comments li article > aside {
+	left: 0;
+	position: absolute;
+	top: 0;
+}
+
+#comments li article > aside img {
+	display: block;
+}
+
+#comments li article > .content {
+	background: #f5f5f5;
+	-webkit-border-radius: 3px;
+	   -moz-border-radius: 3px;
+	        border-radius: 3px;
+	margin-left: 80px;
+	padding: 12px 24px;
+	position: relative;
+}
+
+#comments li article > .content::before {
+	background: transparent url('../images/comment.png') no-repeat 0 0;
+	content: "";
+	height: 18px;
+	left: -10px;
+	position: absolute;
+	top: 15px;
+	width: 10px;
+}
+
+#comments article footer {
+	color: #999;
+	font-size: 10px;
+}
+
+#comments article a time {
+	color: #999;
+}
+
+#comment article a:hover time {
+	color: #418cd1;
+}
+
+#comments article .author {
+	font-weight: normal;
+}
+
+#comments article .content > * {
+	font-size: 12px;
+}
+
+#comments article .content > p {
+	font-size: 14px;
+	margin: 0.5em 0;
+}
+
+#comments article footer .edit,
+#comments article footer .reply {
+	float: right;
+	margin-left: 10px;
+}
+
+#comments article footer > * {
+	padding-right: 10px;
+}
+
+#comments em.awaiting-moderation {
+	color: #d24747;
+	display: block;
+	font-size: 14px;
+	margin: 0 0 12px 0;
+	text-align: center;
+}
+
+/* Special comments classes */
+#comments li.bypostauthor > article { }
+#comments li.byuser article {}
+#comments li.odd article {}
+#comments li.even article {}
+
+/* Comments typography */
+#comments li article abbr[title],
+#comments li article acronym[title] {
+	border-bottom: 1px dotted;
+}
+
+#comments li article code {
+	background: #fafafa;
+	border-left: 4px solid #eee;
+	display: block;
+	margin: 10px 0;
+	padding: 10px 20px; 
+	white-space: pre;
+}
+
+#comments li article blockquote {
+	background: #fafafa;
+	border: 2px solid #eee;
+	border-left: none;
+	border-right: none;
+	display: block;
+	margin: 10px 0;
+	padding: 10px; 
+	position: relative;
+}
+
+#comments li article blockquote p {
+	margin: 0;
+}
+
+#comments li article q {
+	color: #888;
+	font-weight: bold;
+}
+
+#comments li article strike {
+	text-decoration: line-through;
+}
+
+#comments li article del {
+	color: #aaa;
+	text-decoration: line-through;
+}
+
+/* Comment form */
+#respond {
+	padding: 12px 0;
+}
+
+#respond > h3 + form {
+	clear: both;
+}
+
+#respond p.comment-notes,
+#respond p.logged-in-as,
+#respond p.form-allowed-tags {
+	font-size: 11px;
+	color: #999
+}
+
+#respond input,
+#respond textarea {
+	display: block;
+}
+
+#respond input[type="text"],
+#respond input[type="password"],
+#respond textarea {
+	width: 100%;
+}
+
+#respond #reply-title small {
+	float: left;
+	font-size: 14px;
+	line-height: 19px;
+	text-transform: none;
+}
+
+#respond #reply-title small a {
+	color: #fff;
+}
+
+#respond #reply-title small a:hover {
+	color: #c9def1;
+}
+
+/* 5.3. Post meta-data
+==================================== */
+
+.content > form input[type="submit"] {
+	display: inline-block;
+	float: none;
+}
+
+#gk-mainbody article > header h1,
+#gk-mainbody article > header h2 {
+	color: #444;
+	font-size: 38px;
+	line-height: 48px;
+	margin: 24px 0 12px;
+	text-transform: uppercase;
+}
+
+#gk-mainbody article > header {
+	margin-bottom: 10px;
+}
+
+article header {
+	position: relative;
+}
+
+article > footer::after {
+    clear: both;
+    content: "";
+    display: table;
+}
+
+article > .content,
+article > .summary {
+	font-size: 14px;
+	line-height: 26px;
+}
+
+article > .content::after,
+article > .summary::after {
+	clear: both;
+	content: "";
+	display: table;
+}
+
+body.category .summary,
+body.archive .summary,
+body.search .summary,
+body.tag .summary {
+	border-bottom: 1px solid #e5e5e5;
+	margin: 0 0 20px 0;
+	padding: 0 0 20px 0;
+}
+
+.meta {
+	background: #f8f8f8;
+	-webkit-border-radius: 3px;
+	   -moz-border-radius: 3px;
+	        border-radius: 3px;
+	list-style-type: none!important;
+	margin: 12px 0 24px;
+	overflow: hidden;
+	padding: 5px 12px;
+}
+
+.meta li {
+	color: #999;
+	float: left;
+	font-size: 13px;
+	list-style-type: none!important;
+	margin: 0 6px 0 0;
+	padding: 0;
+}
+
+.meta li::before {
+	content: "|";
+	float: left;
+	margin-right: 5px;
+}
+
+.meta li:first-child::before {
+	content: "";
+}
+
+.meta li a,
+.meta li time {
+	display: inline-block;
+}
+
+.meta .format {
+	margin-left: -5px;
+}
+
+.meta .format + li::before {
+	content: "";
+}
+
+#gk-social-api {
+	border-top: 1px solid #e5e5e5;
+	margin: 42px 0 0 0;
+	min-height: 32px;
+	padding: 20px 0;
+}
+
+#gk-social-api > * {
+	display: block;
+	float: left!important;
+	min-height: 33px;
+	margin-right: 5px!important;
+}
+
+#gk-social-api > a {	
+	min-height: inherit!important;
+}
+
+.item-tags {
+	margin-top: 38px;
+	overflow: hidden;
+}
+
+.item-tags span {
+	float: left;
+	line-height: 1.8;
+	margin-right: 25px;
+}
+
+.item-tags a {
+	background: transparent url('../images/style1/tags.png') no-repeat 0 0;
+	color: #fff !important;
+	display: block;
+	float: left;
+	font-size: 11px;
+	height: 19px;
+	line-height: 19px;
+	margin: 2px 8px 2px 0;
+	padding: 0 8px 0 20px;
+}
+
+.item-tags a:hover {
+	background-position: 0 100%;
+}
+
+/* 5.4. Post additional features
+==================================== */
+
+article header h1 sup,
+article.sticky header h1 sup,
+article header h2 sup,
+article.sticky header h2 sup {
+	color: #418CD1;
+	font-size: 12px;
+	font-weight: 400;
+	top: -2.5em;
+	padding: 2px 6px;
+}
+
+article figure.featured-image img {
+	display: block;
+	height: auto;
+	margin: 15px auto 30px auto;
+	max-width: 100%;
+}
+
+article figure.featured-image img + figcaption {
+	color: #bbb;
+	font-size: 12px;
+	margin: -30px 0 15px 0;
+	padding: 10px 0;
+	text-align: center;
+}
+
+.alignnone {
+	float: none;
+}
+
+.alignleft {
+	float: left;
+	margin: 0 15px 15px 0;
+}
+
+.alignright {
+	float: right;
+	margin: 0 0 15px 15px;
+}
+
+.aligncenter {
+	display: block;
+	float: none;
+	margin: 0 auto;
+}
+
+div.wp-caption {
+	max-width: 100%!important;
+}
+
+.wp-caption-text {
+	font-size: 11px;
+	font-style: italic;
+	line-height: 1.5;
+	text-align: center;
+}
+
+.gallery {
+	clear: both;
+	padding: 16px 0;
+}
+
+.gallery-icon img {
+	border: 3px double #e5e5e5!important;
+}
+
+.gallery-caption {
+	font-size: 12px;
+}
+
+/* 5.5. Search Page
+==================================== */
+
+#searchform {
+	overflow: hidden;
+}
+
+#searchform > * {
+	float: left;
+}
+
+#searchform > label {
+	line-height: 2.5;
+	margin-right: 10px;
+}
+
+#searchform #searchsubmit {
+	margin-left: 10px;
+}
+
+/* 5.6. wp-activate.php and wp-signup.php pages
+==================================== */
+
+/* wp-activate.php */
+
+#activateform {
+	margin: 0 auto;
+	max-width: 500px;
+}
+
+#activateform #key,
+#activateform #submit {
+	font-size: inherit!important;
+}
+
+/* wp-signup.php */
+.mu_register {
+	margin: 20px auto!important;
+	max-width: 500px;
+}
+
+.mu_register input[type="submit"], 
+.mu_register #blog_title, 
+.mu_register #user_email, 
+.mu_register #blogname, 
+.mu_register #user_name {
+	font-size: inherit!important;	
+}
+
+.mu_register label {
+	font-size: inherit!important;
+}

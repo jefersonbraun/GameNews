@@ -1,0 +1,975 @@
+/**
+ *
+ * -------------------------------------------
+ * Basic template CSS file
+ * -------------------------------------------
+ *
+ **/
+ 
+/*
+ *
+ * 1. Global elements
+ *
+ *
+------------------------------------ */
+ 
+/* 1.1. Base document elements
+==================================== */
+
+* {
+	outline: none!important;
+}
+
+html {
+	border-bottom: 1px solid transparent; /* with min-height cause showing always the scrollbar */
+	-webkit-font-smoothing: antialiased; /* Fixes Webkit GPU rendering */
+	min-height: 100%;
+}
+
+body { 
+	background: #f4f4f4 url('../images/bg1.jpg') no-repeat center 0;
+	color: #555;
+	font-size: 14px;
+	line-height: 2.0;
+	min-height: 100%;
+	padding: 0 10px 20px 10px;
+	-ms-word-wrap: break-word;
+	    word-wrap: break-word;
+}
+
+body[data-mobile="true"] #main-menu-mobile select {
+    font-size: 50px;
+}
+
+/* fix for the chrome problems with rendering */
+body[data-tablet="false"] a,
+body[data-tablet="false"] article,
+body[data-tablet="false"] div {
+	-webkit-transform: translateZ(0);
+}
+
+body[data-bg="1"] {
+	background: #f4f4f4 url('../images/bg1.jpg') no-repeat center 0;
+}
+
+body[data-bg="2"] {
+	background: #fff url('../images/bg2.jpg') repeat 0 0;
+}
+
+body[data-bg="3"] {
+	background: #fff url('../images/bg3.jpg') repeat 0 0;
+}
+
+/* 1.2. Base typography elements
+==================================== */
+
+a {
+	color: #222;
+	text-decoration: none;
+	-webkit-transition: color 0.3s ease-out;
+	   -moz-transition: color 0.3s ease-out;
+	     -o-transition: color 0.3s ease-out;
+	        transition: color 0.3s ease-out;
+}
+
+article section.content a,
+article section.intro a {
+	color: #418CD1;
+}
+
+article section.content a:active,
+article section.content a:focus,
+article section.content a:hover,
+article section.intro a:active,
+article section.intro a:focus,
+article section.intro a:hover {
+	color: #222;
+}
+
+a:active,
+a:focus,
+a:hover {
+	color: #418CD1;
+	cursor: pointer;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	color: #333;
+	font-weight: normal;
+	margin: 20px 0;
+}
+
+h1 {
+	font-size: 48px;
+	text-transform: uppercase;
+}
+
+h2 {
+	font-size: 34px;
+	text-transform: uppercase;
+}
+
+h3 {
+	font-size: 32px;
+}
+
+h4 {
+	font-size: 24px;
+}
+
+h5 {
+	font-size: 20px;
+}
+
+h6 {
+	font-size: 16px;
+}
+
+.content h2 {
+	clear: both;
+	padding: 24px 0;
+}
+
+.page-title {
+	font-size: 32px;
+}
+
+ul, 
+ol {
+	list-style-type: none;
+	margin: 10px 0;
+	padding: 0;
+}
+
+ul li,
+ol li {
+	line-height: 2.8;
+}
+
+img {
+	height: auto;
+	max-width: 100%;
+}
+
+/* 1.3. Base form elements
+==================================== */
+
+/* buttons */
+.btn,
+button,
+input[type="button"],
+input[type="submit"] {
+	display: block;
+	float: left;
+	height: 34px;
+	line-height: 35px;
+	margin: 0 5px 2px 2px;
+	padding: 0 11px;
+	border: none;
+	-webkit-border-radius: 2px;
+	   -moz-border-radius: 2px;
+	        border-radius: 2px;
+	background: #2f3336;
+	font-size: 12px;
+	font-weight: normal;
+	text-align: center;
+	color: #e0e0e0;
+	cursor: pointer;
+	text-transform: uppercase;
+	-webkit-transition: background-color 0.12s ease-out;
+	   -moz-transition: background-color 0.12s ease-out;
+	     -o-transition: background-color 0.12s ease-out;
+	        transition: background-color 0.12s ease-out;
+}
+
+.btn:hover,
+.btn:active,
+.btn.active,
+.btn.disabled,
+.btn[disabled],
+button:hover,
+input[type="button"]:hover,
+input[type="submit"]:hover,
+button:active,
+input[type="button"]:active,
+input[type="submit"]:active,
+button.disabled,
+input[type="button"].disabled,
+input[type="submit"].disabled {
+	background: #418cd1;
+	color: #fff;
+	cursor: pointer;
+}
+
+/* input fields */
+input[type="text"],
+input[type="password"],
+input[type="email"],
+input[type="www"],
+input[type="tel"],
+textarea {
+	-webkit-box-sizing: border-box;
+	   -moz-box-sizing: border-box;
+	    -ms-box-sizing: border-box;
+	     -o-box-sizing: border-box;
+	        box-sizing: border-box;
+	border: 1px solid #e7e7e7;
+	border-top-color: #ccc;
+	height: 34px;
+	line-height: 35px;
+	padding: 0 12px;
+	font-size: 14px;
+	color: #555;
+	max-width: 100% !important;
+}
+
+textarea {
+	-webkit-box-sizing: border-box;
+	   -moz-box-sizing: border-box;
+	    -ms-box-sizing: border-box;
+	     -o-box-sizing: border-box;
+	        box-sizing: border-box;
+	height: auto;
+	line-height: 20px;
+	padding: 24px;
+	max-width: 100% !important;
+}
+
+label {
+	display: inline-block;
+	font-size: 13px;
+	font-weight: bold;
+	padding: 0 0 4px 0;
+}
+
+select {
+	max-width: 100%;
+}
+
+/* 1.4. Base other elements
+==================================== */
+
+article {
+	margin: 20px 0;
+}
+
+.tag-page article,
+.category-page article,
+.search-page article {
+	margin: 20px 0 60px 0;
+}
+
+/* 1.5. Base CSS classes
+==================================== */
+
+/*
+ *
+ * 2. Template containers
+ *
+ *
+------------------------------------ */
+
+.gk-page {
+	background: #fff;
+	-webkit-box-sizing: border-box;
+	   -moz-box-sizing: border-box;
+	    -ms-box-sizing: border-box;
+	     -o-box-sizing: border-box;
+	        box-sizing: border-box;
+	margin: 60px auto 0 auto!important;
+	padding: 30px;
+}
+
+.gk-page-wrap {
+	margin: 0 auto;
+}
+
+#gk-mainbody-columns {
+	float: left;
+	margin-top: 0;
+	width: 100%;
+}
+
+#gk-mainbody-columns > section {
+	-webkit-box-sizing: border-box;
+	   -moz-box-sizing: border-box;
+	    -ms-box-sizing: border-box;
+	     -o-box-sizing: border-box;
+	        box-sizing: border-box;
+	float: left;
+	padding: 0;
+}
+
+#gk-mainbody-columns > aside {
+	background: #fff;
+	-webkit-box-sizing: border-box;
+	   -moz-box-sizing: border-box;
+	    -ms-box-sizing: border-box;
+	     -o-box-sizing: border-box;
+	        box-sizing: border-box;
+	float: left;
+	padding: 0 0 0 36px;
+}
+
+#gk-mainbody-columns.gk-column-left > section {
+	float: right;	
+}
+
+#gk-mainbody-columns.gk-column-left > aside {
+	float: left;	
+	padding: 0 36px 0 0;
+ }
+
+/*
+ *
+ * 3. Template structure
+ *
+ *
+------------------------------------ */
+ 
+/* 3.1. Top
+==================================== */
+
+#gk-topbar {
+	background: #282828;
+	height: 40px;
+	margin: 0 -10px!important;
+	position: fixed;
+	top: 0;
+	width: 100%;
+	z-index: 10001;
+}
+
+#gk-topbar.adminbar-exists {
+	top: 28px;
+}
+
+/* top menu */
+#topnav {
+	float: left;
+	margin: 0!important;
+}
+
+#topnav li {
+	color: #777;
+	float: left;
+	font-size: 11px;
+	line-height: 40px;
+	padding: 0 16px;
+}
+
+#topnav li a {
+	color: #909090;
+}
+
+#topnav li a:active,
+#topnav li a:focus,
+#topnav li a:hover {
+	color: #fff;
+}
+
+/* User menu */
+#user-menu { 
+	float: right; 
+	margin: 0; 
+	padding: 0; 
+	list-style: none; 
+}
+#user-menu > li a, 
+#user-menu > li span { 
+	padding: 0 26px; 
+}
+#user-menu > li {
+	float: left; 
+	height: 40px; 
+	padding: 0!important;
+}
+#user-menu > li > a { 
+	display: block;
+	height: 40px; 
+	margin: 0 0 0 1px;  
+	font-weight: bold; 
+	font-size: 12px;
+	line-height: 40px; 
+	background: #3b3b3b; 
+	color: #fff; 
+	cursor: pointer; 
+}
+#user-menu li:hover a { 
+	background: #418cd1; 
+}
+#user-menu li a {
+	color: #fff!important;
+}
+#user-menu li ul { 
+	-webkit-box-sizing: border-box;
+	   -moz-box-sizing: border-box;
+	    -ms-box-sizing: border-box;
+	     -o-box-sizing: border-box;
+	        box-sizing: border-box;
+	clear: both;
+	display: block;
+	list-style: none; 
+	margin: 0 0 0 1px!important;
+	padding: 12px 0; 
+	position: absolute; 
+	left: -9999px; 
+	background: #418cd1; 
+	width: 180px; 
+	z-index: 2; 
+}
+#user-menu li ul li { 
+	-webkit-box-sizing: border-box;
+	   -moz-box-sizing: border-box;
+	    -ms-box-sizing: border-box;
+	     -o-box-sizing: border-box;
+	        box-sizing: border-box;
+	display: block;
+	font-size: 12px;
+	font-weight: bold;
+	margin: 0; 
+	padding: 0 24px; 
+	width: 100%;
+}
+#user-menu li ul li a { 
+	border-top: 1px solid #61a6e6;
+	color: #d9ebfc!important;
+	display: block; 
+	line-height: 40px;
+	padding: 2px 0; 
+}
+#user-menu li ul li:hover a,
+#user-menu li ul li a:hover { 
+	color: #fff!important; 
+}
+#user-menu li ul li:first-child a { 
+	border: none; 
+}
+#user-menu li:hover ul { 
+	left: auto; 
+	margin-left: 1px;
+	opacity: 1; 
+}
+#user-menu li.sign-up,
+#user-menu li.sign-up a { 
+	background: #e5c235; 
+}
+
+/* fix for the tablets */
+body[data-tablet="true"] {
+	padding-bottom: 0!important;
+}
+body[data-tablet="true"] #gk-topbar {
+	height: auto!important;
+	min-height: 40px!important;
+	overflow: hidden;
+	position: static!important;
+	width: auto!important;
+}
+body[data-tablet="true"] #gk-topbar > div > ul {
+	float: right!important;
+}
+body[data-tablet="true"] #gk-topbar #user-menu {
+	clear: both;
+	float: left!important;
+}
+body[data-tablet="true"] #user-menu,
+body[data-tablet="true"] #user-menu > li {
+	width:100%;
+}
+body[data-tablet="true"] #user-menu > li a, 
+body[data-tablet="true"] #user-menu > li span {
+	float: none!important;
+	padding: 0!important;
+	text-align: center!important;
+	width:100%;
+}
+body[data-tablet="true"] #user-menu ul {
+	display: none!important;
+}
+
+/* Menu under mainmenu */
+#top-menu {
+	border-bottom: 3px solid #eee;
+	clear: both;
+	margin: 0;
+	min-height: 41px;
+	padding: 0 6px;
+}
+
+#top-menu li {
+	float: left;
+	font-size: 11px;
+	font-weight: bold;
+	height: 11px;
+	line-height: 11px;
+	margin: 0;
+	padding: 17px 0 13px 0;
+	position: relative;
+	text-transform: uppercase;
+}
+
+#top-menu li:first-child a {
+	border-left: none!important;
+}
+
+#top-menu li:hover::after { 
+	border-left: 5px solid transparent;
+	border-right: 5px solid transparent;
+	border-bottom: 5px solid #eee;
+	content: "";
+	height: 0;
+	left: 50%;
+	margin-left: -5px;
+	position: absolute;
+	top: 36px;
+	width: 0;
+}
+
+#top-menu a {
+	border-left: 1px solid #e5e5e5;
+	color: #717171;
+	padding: 0 12px;
+}
+
+#top-menu a:active,
+#top-menu a:focus,
+#top-menu a:hover {
+	color: #212121;
+}
+
+/* top banner */
+#gk-topbanner {
+	float: right;
+	margin: -16px 0 10px 0;
+}
+
+#gk-topbanner img {
+	display: block;
+}
+
+/* 3.2. Header
+==================================== */
+
+#gk-head {
+	position: relative;
+}
+
+#gk-head:after {
+	clear: both;
+	content: "";
+	display: table;
+}
+
+#gk-head h1 {
+	float: left;
+	margin: 0;
+}
+
+#gk-head a.cssLogo {
+	background: transparent url('../images/style1/logo.png') no-repeat 0 0;
+	display: block;
+	height: 48px;
+	margin: 0 0 10px 0;
+	width: 240px;
+	text-indent: -9999px;
+}
+
+#gk-head a.textLogo {
+	color: #333;
+	display: block;
+	font-size: 36px;
+	line-height: 35px;
+	min-height: 48px;
+	padding: 0;
+	text-indent: 0;
+}
+
+#gk-head a.textLogo small {
+	color: #bbb;
+	display: block;
+	font-family: Arial, Verdana, sans-serif;
+	font-size: 11px;
+	line-height: 11px;
+}
+
+#gk-head a.imageLogo,
+#gk-head a.imageLogo img {
+	display: block;
+}
+
+#main-menu-mobile {
+	left: -9999px;
+	position: absolute;
+	top: 0px;
+}
+
+#gk-header {
+	background: #f5f5f5;
+	margin: 0 -10px;
+	padding: 30px 0;
+}
+
+#gk-header .header img {
+	display: block;
+	height: auto;
+	width: 100%;
+}
+
+#gk-header .header {
+	border: none;
+	margin: 0;
+	padding: 0;
+}
+
+/* 3.3. Content
+==================================== */
+
+section.intro {
+	font-size: 110%;
+	padding: 0;
+}
+
+.box::after,
+.gk-page::after,
+#respond::after,
+#gk-footer::after,
+.widget-area::after,
+#gk-mainbody::after,
+#gk-mainbody-columns::after,
+section.content::after {
+    clear: both;
+    content: "";
+    display: table;
+}
+
+/* 3.4. Sidebar
+==================================== */
+
+#gk-sidebar .box {
+	width: 100%;
+}
+
+/* 3.5. Bottom
+==================================== */
+
+#gk-top1,
+#gk-top2,
+#gk-bottom1,
+#gk-bottom2 {
+	clear: both;
+}
+
+#gk-top1 > div,
+#gk-top2 > div,
+#gk-bottom1 > div,
+#gk-bottom2 > div {
+	margin: 0 -14px!important;
+}
+
+#gk-bottom1 {
+	border-top: 4px solid #EEE;
+	clear: both;
+	margin-top: 28px;
+	padding: 35px 0 0 0;
+}
+
+#gk-bottom2 {
+	background: #2f3336;
+	-webkit-box-sizing: border-box;
+	   -moz-box-sizing: border-box;
+	    -ms-box-sizing: border-box;
+	     -o-box-sizing: border-box;
+	        box-sizing: border-box;
+	color: #ccc;
+	font-size: 12px;
+	margin-top: 0!important;
+	padding: 30px;
+}
+
+#gk-bottom2 a {
+	color: #848484;
+}
+
+#gk-bottom2 a:active,
+#gk-bottom2 a:focus,
+#gk-bottom2 a:hover {
+	color: #fff;
+}
+
+#gk-bottom2 .box-title {
+	background: transparent;
+	color: #d4d4d4;
+	font-size: 12px;
+	font-weight: bold!important;
+	line-height: 12px;
+	min-height: 12px;
+	text-transform: uppercase;
+}
+
+#gk-bottom2 .box-title > span {
+	background: transparent!important;
+	line-height: 12px;
+	padding: 0!important;
+	text-transform: uppercase;
+}
+
+#gk-bottom2 li,
+#gk-bottom2 li a {
+	line-height: 24px;
+}
+
+/* 3.6. Footer
+==================================== */
+
+#gk-footer {
+	background: #2f3336;
+	border-top: 1px solid #3b3e41;
+	-webkit-box-sizing: border-box;
+	   -moz-box-sizing: border-box;
+	    -ms-box-sizing: border-box;
+	     -o-box-sizing: border-box;
+	        box-sizing: border-box;
+	color: #747474;
+	font-size: 12px;
+	line-height: 51px;
+	margin: 0 auto 100px auto!important;
+	min-height: 10px;
+	padding: 0 30px;
+}
+#gk-footer a {
+	color: #888;
+}
+#gk-footer a:active,
+#gk-footer a:focus,
+#gk-footer a:hover {
+	color: #fff;
+}
+.gk-copyrights {
+	float: right;
+	margin: 0;
+}
+
+/* other footer elements */
+#gk-style-area {
+	display: block;
+	float: right;
+	line-height: 7px;
+	margin: 0 0 0 12px;
+	text-align: center;
+	-webkit-transform-style: preserve-3d;
+	   -moz-transform-style: preserve-3d;
+	    -ms-transform-style: preserve-3d;
+	        transform-style: preserve-3d;
+}
+#gk-style-area > div {
+	float: left;
+	margin: 13px 0 12px 0;
+}
+#gk-style-area > div:first-child a {
+	-webkit-border-radius: 50%;
+	   -moz-border-radius: 50%;
+	        border-radius: 50%;
+	display: inline-block;
+	height: 7px;
+	text-indent: -9999px;
+	-webkit-transform: scale(1.0);
+	   -moz-transform: scale(1.0);
+	     -o-transform: scale(1.0);
+	        transform: scale(1.0);
+	-webkit-transform-style: preserve-3d;
+	   -moz-transform-style: preserve-3d;
+	    -ms-transform-style: preserve-3d;
+	        transform-style: preserve-3d;
+	-webkit-transition: -webkit-transform 0.2s ease-out;
+	   -moz-transition:    -moz-transform 0.2s ease-out;
+	     -o-transition:      -o-transform 0.2s ease-out;
+	        transition:         transform 0.2s ease-out;
+	width: 7px;
+}
+#gk-style-area > div + div a {
+	border: 1px solid #666;
+	-webkit-border-radius: 50%;
+	   -moz-border-radius: 50%;
+	        border-radius: 50%;
+	display: block;
+	float: left;
+	font-size: 10px;
+	line-height: 12px;
+	margin: 5px 0 0 4px;
+	text-align: center;
+	width: 12px;
+}
+#gk-style-area > div:first-child a:hover {
+	-webkit-transform: scale(1.5);
+	   -moz-transform: scale(1.5);
+	     -o-transform: scale(1.5);
+	        transform: scale(1.5);
+}
+#gk-style-area > div + div a:hover  {
+	border: 1px solid #eee;
+}
+#gk-style-area > div:first-child a {
+	margin: 9px 3px 9px 0;
+}
+#gk-style-area > div a {
+	margin: 9px 0 9px 3px;
+}
+#gk-color1 {
+	background: #418cd1;
+}
+#gk-color2 {
+	background: #fb581e;
+}
+#gk-color3 {
+	background: #a2b269;
+}
+
+#gk-framework-logo {
+	display: block;
+	width: 90px;
+	height: 25px;
+	float: left;
+	text-indent: -9999em;
+	margin: 12px 20px 11px 0px;
+	
+}
+#footer-menu {
+	float: left;
+	margin: 0;
+}
+#footer-menu li {
+	float: left;
+	line-height: 50px;
+	margin-right: 12px;
+}
+#footer-menu li a {
+	color: #b0b0b0;	 
+}
+#footer-menu li a:active,
+#footer-menu li a:focus,
+#footer-menu li a:hover {
+	color: #fff;
+}
+
+/*
+ *
+ * 4. Widget styles
+ *
+ *
+------------------------------------ */
+ 
+/* 4.1. Base style
+==================================== */
+
+.widget-area,
+#gk-top1 .widget-area,
+#gk-top2 .widget-area,
+#gk-bottom1 .widget-area,
+#gk-bottom2 .widget-area,
+#gk-mainbody.with-widgets,
+#gk-mainbody-top,
+#gk-mainbody-bottom {
+	margin-bottom: -28px!important;
+}
+
+#gk-top1, 
+#gk-top2, 
+#gk-bottom1, 
+#gk-mainbody,
+#gk-sidebar,
+#gk-breadcrumb-area {
+	margin-top: 28px!important;
+}
+
+.widget-area .box {
+	padding: 0 14px;
+}
+
+.box {
+	-webkit-box-sizing: border-box;
+	   -moz-box-sizing: border-box;
+	    -ms-box-sizing: border-box;
+	     -o-box-sizing: border-box;
+	        box-sizing: border-box;
+	float: left;
+	margin-bottom: 28px;
+	overflow: hidden;
+}
+
+.box ul {
+	list-style-type: none;
+	margin: 0;
+}
+
+.box ul li {
+	line-height: 1.5;
+	padding: 5px 0;
+}
+
+.box .box-title {
+	background: transparent url('../images/header_bg.png') repeat 0 0;
+	color: #fff;
+	font-size: 15px;
+	font-weight: 700!important;
+	margin: 0 0 10px 0;
+	min-height: 36px;
+	text-transform: uppercase;
+}
+	
+.box .box-title > span {
+	background: #418cd1;
+	display: block;
+	float: left;
+	line-height: 36px;
+	padding: 0 12px;
+}
+
+/* 4.2. Base style for other areas
+==================================== */
+
+#gk-top .box,
+#gk-bottom .box {
+	float: left;
+}
+
+.widget-area .col1 { width: 100%; }
+.widget-area .col2 { width: 50%; }
+.widget-area .col3 { width: 33.3%; }
+.widget-area .col4 { width: 25%; }
+.widget-area .col5 { width: 20%; }
+.widget-area .col6 { width: 16.6%; }
+
+.widget-area .box.last1 { width: 100%; }
+.widget-area .box.last2 { width: 50%; }
+.widget-area .box.last3 { width: 33.3%; }
+.widget-area .box.last4 { width: 25%; }
+.widget-area .box.last5 { width: 20%; }
+
+.widget-area .nth1 {
+	clear: both;
+}
+
+/* 4.3. Device classes
+==================================== */
+
+.onlyDesktop {
+	display: block!important;
+}
+
+.onlyTablets {
+	display: none!important;
+}
+
+.onlySmartphones {
+	display: none!important;
+}
+
+.onlyTabltetsAndSmartphones {
+	display: none!important;
+}

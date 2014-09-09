@@ -1,0 +1,150 @@
+/**
+ *
+ * -------------------------------------------
+ * Mobile CSS file
+ * -------------------------------------------
+ * 
+ **/
+ 
+/*
+ *
+ * 11. Mobile code
+ *
+ *
+------------------------------------ */
+ 
+/* 11.1. Base elements
+==================================== */ 
+
+body > .gk-page:first-child {
+	padding: 5px!important;
+}
+
+/* archive / page 404 */
+.page404 .widget,
+.archivepage .widget {
+	margin: 0!important;
+	width: 100%!important;
+}
+
+/* images fix */
+#gk-mainbody img {
+	height: auto!important;
+	max-width: 100%!important;
+}
+
+/* column rules */
+#gk-sidebar {
+	padding: 20px 0!important;
+}
+
+#gk-sidebar > .box {
+	float: none!important;
+	padding: 0!important;
+	width: 100%!important;
+}
+
+.widget-area .col1,
+.widget-area .col2,
+.widget-area .col3,
+.widget-area .col4,
+.widget-area .col5,
+.widget-area .col6,
+.widget-area .box.last1,
+.widget-area .box.last2,
+.widget-area .box.last3,
+.widget-area .box.last4,
+.widget-area .box.last5 { 
+	float: none!important;
+	margin: 0 auto 20px auto!important; 
+	max-width: 420px; 
+	width: 100%!important; 
+}
+
+.widget-area .nth1,
+.widget-area .nth2,
+.widget-area .nth3,
+.widget-area .nth4,
+.widget-area .nth5,
+.widget-area .nth6 {
+	clear: both;
+}
+
+.gk-columns > div {
+	padding: 10px 0!important;
+	width: 100%!important;
+}
+
+/* 11.2. Posts
+==================================== */
+
+
+/* 11.3. Device classes
+==================================== */
+
+.onlyDesktop {
+	display: none!important;
+}
+
+.onlyTablets {
+	display: none!important;
+}
+
+.onlySmartphones {
+	display: block!important;
+}
+
+.onlyTabltetsAndSmartphones {
+	display: block!important;
+}
+
+/* 11.4. Other elements
+==================================== */
+
+/* footer adjustments */
+#gk-footer {
+	padding-top: 10px!important;
+}
+#gk-footer ul li {
+	float: none!important;	
+}
+#gk-footer ul li:before {
+	display: none!important;
+}
+#gk-footer ul + p {
+	border-top: 1px solid #959595;
+	line-height: 2.2;
+	padding-top: 10px;
+}
+.gk-copyrights {
+	line-height: 1.5;
+}
+
+/* NSP adjustments */
+.gk-nsp-arts-page .gk-nsp-art {
+	border-top: 1px solid #eee!important;
+	border-left: none!important;
+	padding-bottom: 20px!important;
+	padding-top: 20px!important;
+	width: 100%!important;
+}
+.gk-nsp-arts-page .gk-nsp-art:first-child {
+	border-top: none!important;
+}
+
+/* suffix mobilelayout */
+.mobile_layout .gk-nsp-content-wrap {
+	clear: both;
+	padding-top: 10px;
+}
+
+/* Tabs GK5 adjustments */
+.gk-tabs-nav {
+	height: auto!important;
+	min-height: 40px!important;
+	overflow: hidden;
+}
+
+.gk-tabs-nav li {
+	width: 100%!important;
+}

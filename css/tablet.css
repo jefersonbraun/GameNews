@@ -1,0 +1,296 @@
+/**
+ *
+ * -------------------------------------------
+ * Tablet CSS file
+ * -------------------------------------------
+ * 
+ **/
+ 
+/*
+ *
+ * 10. Tablet code
+ *
+ *
+------------------------------------ */
+ 
+/* 10.1. Base elements
+==================================== */ 
+
+body {
+	background-color: #fff!important;
+	background-image: none!important;
+	padding-bottom: 0!important;
+}
+
+.gk-page {
+	margin-top: 0!important;
+}
+
+/* sidebar */
+#gk-mainbody-columns {
+	display: block;
+}
+
+#gk-mainbody-columns > section,
+#gk-mainbody-columns > aside {
+	display: block;
+	overflow: hidden;
+	width: 100%!important;
+}
+
+#gk-content, 
+#gk-sidebar {
+	width: 100% !important;
+}
+#gk-sidebar {
+	padding: 16px 0 0 0!important;
+}
+#gk-sidebar > .box {
+	float: left;
+	margin-top: 0!important;
+	margin-bottom: 12px!important;
+	width: 50%;
+}
+#gk-sidebar > .box:nth-child(2n+1) {
+	clear: both!important;
+}
+#gk-sidebar > .box:nth-child(odd) {
+	padding-right: 10px;	
+}
+#gk-sidebar > .box:nth-child(even) {
+	padding-left: 10px;
+}
+
+/* Archive page */
+.archivepage .widget.first {
+	margin-right: 2%;
+	margin-left: 0!important;
+}
+
+.archivepage .widget.first,
+.archivepage .widget.first + .widget {
+	margin-right: 0;
+	margin-left: 2%;
+	width: 48%;
+}
+
+.archivepage .widget.last {
+	margin: 0;
+	width: 100%;
+}
+
+/* images fix */
+#gk-mainbody img {
+	height: auto!important;
+	max-width: 100%!important;
+}
+
+/* column rules */
+#gk-sidebar > .box {
+	float: left!important;
+	width: 50%!important;
+}
+
+.widget-area .col1 { width: 100%; }
+.widget-area .col2 { width: 50%; }
+.widget-area .col3 { width: 33.3%; }
+.widget-area .col4 { width: 50%; }
+.widget-area .col5 { width: 33.3%; }
+.widget-area .col6 { width: 33.3%; }
+
+.widget-area .box.last1 { width: 100%; }
+.widget-area .box.last2 { width: 50%; }
+.widget-area .box.last3 { width: 33.3%; }
+.widget-area .box.last4 { width: 50%; }
+.widget-area .box.last5 { width: 33.3%; }
+
+.widget-area .nth1 {
+	clear: both;
+}
+
+.widget-area .col6.last5.nth4,
+.widget-area .col6.last5.nth5 {
+	width: 50%;
+}
+
+.gk-columns > div {
+	padding: 0 6px;
+}
+
+/* 10.2. Main menu elements
+==================================== */ 
+
+#gk-topbanner {
+	clear: both;
+	float: left;
+	margin-top: 10px;
+}
+
+#main-menu {
+	display: none;
+}
+
+#main-menu-mobile {
+	background: transparent url('../images/tablet_menu_btn.png') no-repeat right center;
+	float: right;
+	left: auto;
+	position: relative;
+	top: 0px;
+	width: 48px;
+}
+
+#main-menu-mobile > select {
+	border: 1px solid #fff;
+	filter: alpha(opacity=0);
+	height: 48px!important;
+	opacity: 0;
+	width: 48px;
+}
+
+/* 10.3. Footer
+==================================== */ 
+
+#gk-footer {
+	text-align: center;
+}
+#gk-footer > * {
+	display: inline-block!important;
+	float: none!important;
+}
+
+#gk-framework-logo {
+	margin: 12px auto 0 auto!important;
+}
+#footer-menu {
+	clear: both;
+	text-align: center;
+	width: 100%;
+}
+#footer-menu li {
+	display: inline-block!important;
+	float: none!important;
+}
+#gk-style-area {
+	clear: both;
+	float: none!important;
+	margin: 0 0 -20px 0!important;
+}
+body .gk-copyrights {
+	text-align: center;
+	width: 100%;
+}
+ 
+
+/* 10.4. Device classes
+==================================== */
+
+.onlyDesktop {
+	display: none!important;
+}
+
+.onlyTablets {
+	display: block!important;
+}
+
+.onlySmartphones {
+	display: none!important;
+}
+
+.onlyTabltetsAndSmartphones {
+	display: block!important;
+}
+
+/* 10.5. Other elements
+==================================== */
+
+.content dl.post-fields dt,
+.content dl.post-fields dd {
+	width: 100%;
+} 
+
+.content dl.post-fields dd {
+	border: none!important;
+	margin: 0!important;
+	padding: 0!important;
+}
+
+/* topbar */
+#gk-topbar {
+	height: auto!important;
+	min-height: 40px!important;
+	overflow: hidden;
+	position: static!important;
+	width: auto!important;
+}
+#top-menu {
+	border-top: 3px solid #eee;
+	margin-top: 10px;
+	overflow: hidden;
+}
+
+#gk-topbar > div > #topnav {
+	float: right!important;
+}
+#gk-topbar #user-menu {
+	clear: both;
+	float: left!important;
+}
+#user-menu,
+#user-menu li {
+	width:100%;
+}
+#user-menu > li a, 
+#user-menu > li span {
+	float: none!important;
+	padding: 0!important;
+	text-align: center!important;
+	width:100%;
+}
+#user-menu > ul {
+	display: none!important;
+}
+
+/* 10.6. Responsive tables
+==================================== */
+
+@media (max-width: 600px) {
+	article section table {
+		border: 1px solid #eee;
+		border-bottom: none;
+		max-width: 100%!important;
+		width: 100%!important;
+	}
+
+	article section table thead {
+		display: none;
+	}
+
+	article section table td {
+		border-top: 1px solid #eee;
+		-webkit-box-sizing: border-box;
+		-moz-box-sizing: border-box;
+		box-sizing: border-box;
+		clear: both;
+		display: block;
+		float: right;
+		padding: 5px 0 5px 50%;
+		position: relative;
+		width: 100%;
+	}
+
+	article section table td:first-child {
+		border-top: none;
+	}
+
+	article section table tbody tr {
+		border-bottom: 2px solid #eee;
+	}
+
+	article section table td span.gk-table-label {
+		display: block;
+		font-size: 95%;
+		font-weight: bold;
+		left: 5px;
+		position: absolute;
+	}
+}

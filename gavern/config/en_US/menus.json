@@ -1,0 +1,32 @@
+[
+	{
+		"main": true,
+		"location": "mainmenu",
+		"name": "Main menu",
+		"description": "Main menu of the theme"
+	},
+	{
+		"main": false,
+		"location": "topnav",
+		"name": "Top navigation",
+		"description": "Menu used in the left side of the topbar"
+	},
+	{
+		"main": false,
+		"location": "topmenu",
+		"name": "Top menu",
+		"description": "Menu used under the mainmenu"
+	},
+	{
+		"main": false,
+		"location": "usermenu",
+		"name": "User menu",
+		"description": "Menu used in the right side of the topbar"
+	},
+	{
+		"main": false,
+		"location": "footermenu",
+		"name": "Footer menu",
+		"description": "Menu used in the footer of the theme"
+	}
+]
