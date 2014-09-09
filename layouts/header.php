@@ -16,6 +16,10 @@
 	<title><?php do_action('gavernwp_title'); ?></title>
 	<?php do_action('gavernwp_metatags'); ?>
 	
+    <meta property="og:title" content="<?php do_action('gavernwp_title'); ?>" />
+    <meta property="og:url" content="<?php the_permalink(); ?>" />
+    <meta property="og:image" content="<?php the_post_thumbnail(); ?>" />
+    
 	<link rel="profile" href="http://gmpg.org/xfn/11" />
 	<link rel="shortcut icon" href="<?php get_stylesheet_directory_uri(); ?>/favicon.ico" />
 	<link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>" />
